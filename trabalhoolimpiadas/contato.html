@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contate-nos! - Hugo Caldeirano</title>
+    <link rel="icon" type="image/jpg" href="img/icon.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script lang="javascript" type="text/javascript">
+
+
+        function validar(){
+            var nome = form.nome.value;
+            var email = form.email.value;
+            var avaliacao = form.avaliacao.value;
+      
+
+            if(nome == "") {
+                alert('Preencha o campo Nome!');
+                form.nome.focus();
+                return false;
+            }
+
+            if(email == "") {
+                alert('Preencha o campo Email!');
+                form.email.focus();
+                return false;
+            }
+
+            if(avaliacao == "") {
+                alert('Preencha o campo Avaliação!');
+                form.avaliacao.focus();
+                return false;
+            }
+        }
+
+
+        </script>
+
+</head>
+<body>
+    <div id="layout">
+        <div class="design-menu">
+            <a href="index.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="destaque.html">Destaque</a>
+            <a href="desafio.html">Desafios</a>
+            <a href="medalha.html">Medalhas</a>
+            <a href="contato.html">Contato</a>
+        </div>
+</div>
+
+<div class="titulo-contato">
+    Contate-nos!
+</div>
+
+<div class="tudo-form">
+    <form name="form" action="concluido.html" method="get">
+        Nome:<input type="text" name="nome" class="form1"><br><br>
+        Email:<input type="text" name="email" class="form1"><br><br>
+        Qual a sua avaliação para este site?:
+        <select name="avaliacao" class="form1">
+            <option></option>
+            <option>I - Irregular</option>
+            <option>R - Regular</option>
+            <option>B - Bom</option>
+            <option>MB - Muito Bom</option>
+        </select>
+        <br><br>
+
+        Faça um comentario sobre este site!<br>
+        <textarea id="textarea"></textarea><br><br>
+
+        <button type="submit" class="button-enviar" onclick="return validar()">
+            Enviar
+        </button>
+        <button type="reset" class="button-limpar">
+            Limpar tudo
+        </button>
+    </form>
+
+</div>
+
+<div id="rodape">Arthur Vieira 2024 - &copyTodos os direitos reservados <br>
+    Trabalho academico sem fins lucrativos
+</div>
+</body>
+</html>
